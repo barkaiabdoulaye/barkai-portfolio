@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barkaï Abdoulaye - Frontend Developer Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Optional: Add a Google Font for better typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons (Optional but helpful) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Mobile Menu Toggle (Hamburger) - This is our "additional interaction" -->
+    <div class="menu-toggle" id="mobile-menu">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Navigation (Optional but good practice) -->
+    <nav class="main-nav" id="main-nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#calculator">Calculator</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- 1. Hero Section (Landing) -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-image">
+                <!-- REPLACE 'profile.jpg' with your actual image file name -->
+                <img src="assets/profile.jpeg" alt="Barkaï Abdoulaye Profile Picture">
+            </div>
+            <div class="hero-content">
+                <h1>Barkaï Abdoulaye</h1>
+                <p class="hero-role">Frontend Developer & Computer Science Student</p>
+                <p class="hero-tagline">Building responsive and user-friendly web solutions in Musanze.</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+   <!-- 2. About Me Section -->
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+        <div class="about-text">
+            <p>I am a second-year Computer Science student at the Faculty of Sciences and Information Technology. I hold a Scientific Baccalaureate (specialization in mathematics) from High School. My journey in tech began with academic competitions and university projects, which sparked my passion for web development.</p>
+            <p>I am fluent in French and Arabic, with intermediate English skills. My career goal is to become a skilled Frontend Developer, contributing to innovative digital solutions in Rwanda's tech ecosystem, particularly in Musanze.</p>
+        </div>
+        <div class="about-skills-list">
+            <h3>Core Competencies:</h3>
+            <ul>
+                <li>HTML5 & CSS3</li>
+                <li>Responsive Design</li>
+                <li>JavaScript (Basics)</li>
+                <li>C Programming</li>
+                <li>Algorithms & Data Structures</li>
+                <li>Git & VS Code</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+    <!-- 3. Technical Skills Section -->
+<section id="skills" class="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+        <!-- Web Development Skills -->
+        <div class="skill-card">
+            <i class="fab fa-html5"></i>
+            <h3>HTML5</h3>
+            <div class="progress-bar">
+                <div class="progress html">85%</div>
+            </div>
+        </div>
+        <div class="skill-card">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS3</h3>
+            <div class="progress-bar">
+                <div class="progress css">80%</div>
+            </div>
+        </div>
+        <div class="skill-card">
+            <i class="fab fa-js"></i>
+            <h3>JavaScript</h3>
+            <div class="progress-bar">
+                <div class="progress js">60%</div> <!-- Basics -->
+            </div>
+        </div>
+        <!-- Programming Skills -->
+        <div class="skill-card">
+            <i class="fas fa-code"></i>
+            <h3>C Language</h3>
+            <div class="progress-bar">
+                <div class="progress c">75%</div>
+            </div>
+        </div>
+        <div class="skill-card">
+            <i class="fas fa-project-diagram"></i>
+            <h3>Algorithms</h3>
+            <div class="progress-bar">
+                <div class="progress algorithms">70%</div>
+            </div>
+        </div>
+        <!-- Tools -->
+        <div class="skill-card">
+            <i class="fas fa-tools"></i>
+            <h3>VS Code & Git</h3>
+            <div class="progress-bar">
+                <div class="progress tools">65%</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Languages & Soft Skills -->
+    <div class="languages-skills">
+        <h3>Languages</h3>
+        <div class="languages-grid">
+            <div class="language-item">
+                <span>French</span>
+                <span class="level fluent">Fluent</span>
+            </div>
+            <div class="language-item">
+                <span>Arabic</span>
+                <span class="level fluent">Fluent</span>
+            </div>
+            <div class="language-item">
+                <span>English</span>
+                <span class="level intermediate">Intermediate</span>
+            </div>
+        </div>
+        
+        <h3>Soft Skills</h3>
+        <div class="soft-skills">
+            <span class="soft-skill-tag">Willingness to learn</span>
+            <span class="soft-skill-tag">Creativity</span>
+            <span class="soft-skill-tag">Autonomy</span>
+            <span class="soft-skill-tag">Teamwork</span>
+        </div>
+    </div>
+</section>
+
+    <!-- 4. Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <article class="project-card">
+                <!-- REPLACE with screenshot -->
+                <img src="images/project1.jpg" alt="Screenshot of Musanze Community Finder Project">
+                <h3>Musanze Community Finder</h3>
+                <p><strong>Problem:</strong> Tourists and new residents struggle to find local services (e.g., guides, markets).</p>
+                <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Google Maps API (simulated).</p>
+                <p><strong>Solution:</strong> A simple interface to filter and locate key community points.</p>
+                <a href="#" target="_blank" class="btn-small">GitHub Repo</a>
+            </article>
+            <!-- Project 2 -->
+            <article class="project-card">
+                <img src="images/project2.jpg" alt="Screenshot of TaskFlow App Project">
+                <h3>TaskFlow: Student Planner</h3>
+                <p><strong>Problem:</strong> Keeping track of assignments and deadlines.</p>
+                <p><strong>Technologies:</strong> HTML, CSS, JavaScript (Local Storage).</p>
+                <p><strong>Solution:</strong> A drag-and-drop task board to organize academic tasks.</p>
+                <a href="#" target="_blank" class="btn-small">GitHub Repo</a>
+            </article>
+            <!-- Project 3 -->
+            <article class="project-card">
+                <img src="images/project3.jpg" alt="Screenshot of Portfolio Project">
+                <h3>Personal Portfolio V1</h3>
+                <p><strong>Problem:</strong> Needed a professional online presence for internship applications.</p>
+                <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Flexbox.</p>
+                <p><strong>Solution:</strong> This very portfolio, built from scratch following strict guidelines.</p>
+                <a href="#" target="_blank" class="btn-small">GitHub Repo</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- 5. Interactive JavaScript Calculator (Option B: Loan Repayment) -->
+    <section id="calculator" class="calculator">
+        <h2>Loan Repayment Estimator</h2>
+        <p class="calc-description">Estimate your monthly loan payments (in RWF).</p>
+        <div class="calc-container">
+            <div class="calc-form">
+                <div class="form-group">
+                    <label for="loan-amount">Loan Amount (RWF):</label>
+                    <input type="number" id="loan-amount" placeholder="e.g., 1000000" required>
+                </div>
+                <div class="form-group">
+                    <label for="interest-rate">Annual Interest Rate (%):</label>
+                    <input type="number" id="interest-rate" step="0.1" placeholder="e.g., 5.5" required>
+                </div>
+                <div class="form-group">
+                    <label for="loan-months">Loan Term (Months):</label>
+                    <input type="number" id="loan-months" placeholder="e.g., 24" required>
+                </div>
+                <button type="button" id="calculate-loan" class="btn">Calculate Monthly Payment</button>
+            </div>
+            <div class="calc-result" id="calc-result">
+                <!-- Result will be displayed here via JavaScript -->
+                <p>Monthly Payment: <span id="monthly-payment">--- RWF</span></p>
+                <p id="calc-error" class="error-message"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Downloadable CV Section -->
+    <section id="cv" class="cv">
+        <h2>My CV</h2>
+        <div class="cv-container">
+            <div class="cv-preview">
+                <h3>Barkaï Abdoulaye</h3>
+                <p><strong>Education:</strong> Year II, Computer Science, Faculty of Sciences and IT</p>
+                <p><strong>Skills:</strong> HTML, CSS, JavaScript, Git, Responsive Design</p>
+                <p><strong>Projects:</strong> Musanze Community Finder, TaskFlow Student Planner, Personal Portfolio</p>
+                <p><strong>Career Goal:</strong> Junior Frontend Developer creating impactful digital solutions in Rwanda.</p>
+            </div>
+            <a href="#" id="download-cv-btn" class="btn">Download CV (PDF)</a>
+            <!-- In a real scenario, you'd link to an actual PDF file. For now, the button will trigger a JS message. -->
+        </div>
+    </section>
+
+    <!-- 7. Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> <a href="mailto:Barkaiabdoulaye0@gmail.com">Barkaiabdoulaye0@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+250795311796">+250 795 311 796</a></p>
+                <p><i class="fab fa-linkedin"></i> <a href="#" target="_blank">LinkedIn Profile</a></p>
+                <p><i class="fab fa-github"></i> <a href="#" target="_blank">GitHub Profile</a></p>
+            </div>
+            <div class="contact-form" style="text-align: center;">
+    <a href="mailto:Barkaiabdoulaye0@gmail.com?subject=Contact%20from%20Portfolio&body=Hello%20Barkaï%2C%0A%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20connect." 
+       class="btn" 
+       style="font-size: 1.2em; padding: 15px 30px;">
+        <i class="fas fa-envelope"></i> Send me an email
+    </a>
+    <p style="margin-top: 20px; color: #666;">
+        <i class="fas fa-info-circle"></i> This will open your default email app
+    </p>
+</div>
+        </div>
+    </section>
+
+    <!-- Footer with Dynamic Year -->
+    <footer>
+        <p>&copy; <span id="current-year"></span> Barkaï Abdoulaye. Built from scratch for Advanced Web Design Assignment.</p>
+    </footer>
+
+    <!-- Link to JavaScript file -->
+    <script src="js/main.js"></script>
+</body>
+</html>
