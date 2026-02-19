@@ -212,46 +212,216 @@
     </section>
 
     <!-- 6. Downloadable CV Section -->
-    <section id="cv" class="cv">
-        <h2>My CV</h2>
-        <div class="cv-container">
-            <div class="cv-preview">
-                <h3>Barkaï Abdoulaye</h3>
-                <p><strong>Education:</strong> Year II, Computer Science, Faculty of Sciences and IT</p>
-                <p><strong>Skills:</strong> HTML, CSS, JavaScript, Git, Responsive Design</p>
-                <p><strong>Projects:</strong> Musanze Community Finder, TaskFlow Student Planner, Personal Portfolio</p>
-                <p><strong>Career Goal:</strong> Junior Frontend Developer creating impactful digital solutions in Rwanda.</p>
+<section id="cv" class="cv">
+    <h2>My CV</h2>
+    <div class="cv-container">
+        <!-- Aperçu du CV -->
+        <div class="cv-preview">
+            <h3>Barkaï Abdoulaye Dongar</h3>
+            <p class="cv-subtitle">Computer Science Student & Frontend Developer</p>
+            
+            <div class="cv-grid">
+                <!-- Colonne gauche -->
+                <div class="cv-left">
+                    <div class="cv-section">
+                        <h4><i class="fas fa-graduation-cap"></i> Education</h4>
+                        <ul>
+                            <li><strong>2025-Présent:</strong> Bachelor's in Computer Science - Year 2</li>
+                            <li><strong>2024:</strong> Bachelor's in Computer Science - Year 1</li>
+                            <li><strong>2023:</strong> Scientific Baccalaureate (Mathematics)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="cv-section">
+                        <h4><i class="fas fa-briefcase"></i> Experience</h4>
+                        <ul>
+                            <li>Academic competitions participant</li>
+                            <li>University projects developer</li>
+                            <li>Computer science practical work</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="cv-section">
+                        <h4><i class="fas fa-code"></i> Web Projects</h4>
+                        <ul>
+                            <li>Personal showcase website (HTML/CSS)</li>
+                            <li>Student portfolio page</li>
+                            <li>Contact form in HTML/CSS</li>
+                            <li>AgriTech mini site</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Colonne droite -->
+                <div class="cv-right">
+                    <div class="cv-section">
+                        <h4><i class="fas fa-tools"></i> Technical Skills</h4>
+                        <div class="cv-skills">
+                            <span class="cv-skill">HTML5</span>
+                            <span class="cv-skill">CSS3</span>
+                            <span class="cv-skill">JavaScript</span>
+                            <span class="cv-skill">C Language</span>
+                            <span class="cv-skill">Algorithms</span>
+                            <span class="cv-skill">Git</span>
+                            <span class="cv-skill">VS Code</span>
+                            <span class="cv-skill">Responsive Design</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cv-section">
+                        <h4><i class="fas fa-language"></i> Languages</h4>
+                        <ul>
+                            <li><strong>Français:</strong> Courant</li>
+                            <li><strong>Arabe:</strong> Courant</li>
+                            <li><strong>Anglais:</strong> Intermédiaire</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="cv-section">
+                        <h4><i class="fas fa-heart"></i> Soft Skills</h4>
+                        <div class="cv-soft-skills">
+                            <span class="soft-skill">Willingness to learn</span>
+                            <span class="soft-skill">Creativity</span>
+                            <span class="soft-skill">Autonomy</span>
+                            <span class="soft-skill">Teamwork</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a href="#" id="download-cv-btn" class="btn">Download CV (PDF)</a>
-            <!-- In a real scenario, you'd link to an actual PDF file. For now, the button will trigger a JS message. -->
         </div>
-    </section>
+        
+        <!-- BOUTONS DE TÉLÉCHARGEMENT - C'EST ICI QUE ÇA COMPTE -->
+        <div class="cv-download-buttons">
+            <!-- Bouton principal de téléchargement -->
+            <a href="cv/Barkai_Abdoulaye_CV.pdf" 
+               download="Barkai_Abdoulaye_CV.pdf" 
+               class="btn btn-download"
+               title="Télécharger mon CV en PDF">
+                <i class="fas fa-download"></i> 
+                Télécharger mon CV (PDF)
+            </a>
+            
+            <!-- Bouton secondaire pour voir le CV dans le navigateur -->
+            <a href="cv/Barkai_Abdoulaye_CV.pdf" 
+               target="_blank" 
+               class="btn btn-view"
+               title="Voir mon CV dans le navigateur">
+                <i class="fas fa-eye"></i> 
+                Voir le CV
+            </a>
+            
+            <!-- Bouton d'impression -->
+            <button id="print-cv" class="btn btn-print" title="Imprimer mon CV">
+                <i class="fas fa-print"></i> 
+                Imprimer
+            </button>
+        </div>
+        
+        <!-- Information supplémentaire -->
+        <p class="cv-note">
+            <i class="fas fa-info-circle"></i> 
+            Le CV est disponible en format PDF. Vous pouvez le télécharger, le voir ou l'imprimer.
+        </p>
+    </div>
+</section>
 
-    <!-- Section Contact - Version corrigée -->
+   
+           <!-- 7. Contact Section avec Formulaire Amélioré -->
 <section id="contact" class="contact">
     <h2>Contact Me</h2>
     <div class="contact-container">
         <div class="contact-info">
-            <p><i class="fas fa-envelope"></i> <a href="mailto:Barkaiabdoulaye0@gmail.com">Barkaiabdoulaye0@gmail.com</a></p>
-            <p><i class="fas fa-phone"></i> <a href="tel:+250795311796">+250 795 311 796</a></p>
-            <!-- LIGNE SUPPRIMÉE : LinkedIn -->
-            <p><i class="fab fa-github"></i> <a href="https://github.com/barkaiabdoulaye" target="_blank">GitHub: barkaiabdoulaye</a></p>
+            <h3>Let's Connect!</h3>
+            <p>Feel free to reach out for collaborations or just a friendly hello.</p>
+            
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h4>Email</h4>
+                    <a href="mailto:Barkaiabdoulaye0@gmail.com">Barkaiabdoulaye0@gmail.com</a>
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <i class="fas fa-phone-alt"></i>
+                <div>
+                    <h4>Phone</h4>
+                    <a href="tel:+250795311796">+250 795 311 796</a>
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <i class="fab fa-github"></i>
+                <div>
+                    <h4>GitHub</h4>
+                    <a href="https://github.com/barkaiabdoulaye" target="_blank">@barkaiabdoulaye</a>
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <h4>Location</h4>
+                    <p>Musanze, Rwanda</p>
+                </div>
+            </div>
         </div>
-        <!-- ... reste du formulaire ... -->
+        
+        <div class="contact-form">
+            <h3>Send Me a Message</h3>
+            <form action="https://formsubmit.co/Barkaiabdoulaye0@gmail.com" method="POST" id="contactForm">
+                <!-- FormSubmit.co configuration -->
+                <input type="hidden" name="_subject" value="New message from Portfolio - Barkaï Abdoulaye">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://barkaiabdoulaye.github.io/barkai-portfolio/thanks.html">
+                
+                <!-- Honeypot pour anti-spam -->
+                <input type="text" name="_honey" style="display:none">
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name"><i class="fas fa-user"></i> Your Name *</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i> Your Email *</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject"><i class="fas fa-tag"></i> Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="What's this about?">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message"><i class="fas fa-comment"></i> Your Message *</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Hello Barkaï, I'd like to..." required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="btn" id="submitBtn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                    <div id="formStatus" class="form-status"></div>
+                </div>
+            </form>
+        </div>
     </div>
 </section>
-            <div class="contact-form" style="text-align: center;">
-    <a href="mailto:Barkaiabdoulaye0@gmail.com?subject=Contact%20from%20Portfolio&body=Hello%20Barkaï%2C%0A%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20connect." 
-       class="btn" 
-       style="font-size: 1.2em; padding: 15px 30px;">
-        <i class="fas fa-envelope"></i> Send me an email
-    </a>
-    <p style="margin-top: 20px; color: #666;">
-        <i class="fas fa-info-circle"></i> This will open your default email app
-    </p>
+
+<!-- Modal de remerciement (optionnel) -->
+<div id="thankYouModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <i class="fas fa-check-circle" style="font-size: 4rem; color: #28a745;"></i>
+        <h2>Thank You!</h2>
+        <p>Your message has been sent successfully. I'll get back to you soon.</p>
+        <button class="btn" onclick="document.getElementById('thankYouModal').style.display='none'">Close</button>
+    </div>
 </div>
-        </div>
-    </section>
 
     <!-- Footer with Dynamic Year -->
     <footer>
